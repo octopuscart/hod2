@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "970617513621",
+    "project_id": "hodnagpur",
+    "storage_bucket": "hodnagpur.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:970617513621:android:36d6582d1cd78d3107dd9c",
+        "android_client_info": {
+          "package_name": "com.christianappdevelopers.hod"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "970617513621-bdrjcqpmhsndadbvb17tg46me0hqodpn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAWr00u3tP8ljtRtFkCbdQT94WiubFu_4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "970617513621-bdrjcqpmhsndadbvb17tg46me0hqodpn.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "970617513621-u53751c3u6n3dbdfrpn8nmd4sd4ob9a0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.houseOfDeliverance"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:970617513621:android:e127a061e1a5853c07dd9c",
+        "android_client_info": {
+          "package_name": "com.hodnagpur.hodapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "970617513621-bdrjcqpmhsndadbvb17tg46me0hqodpn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAWr00u3tP8ljtRtFkCbdQT94WiubFu_4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "970617513621-bdrjcqpmhsndadbvb17tg46me0hqodpn.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "970617513621-u53751c3u6n3dbdfrpn8nmd4sd4ob9a0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.houseOfDeliverance"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
