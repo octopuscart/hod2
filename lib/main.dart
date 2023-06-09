@@ -5,6 +5,8 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:house_of_deliverance/core/db_helper.dart';
 import 'package:house_of_deliverance/screens/splash_screen.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
 
 Future<void> backgroundHandler(RemoteMessage message) async {
   if (kDebugMode) {
@@ -15,7 +17,9 @@ Future<void> backgroundHandler(RemoteMessage message) async {
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
 
   FirebaseFirestore.instance.settings = Settings(
     persistenceEnabled: true,

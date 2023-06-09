@@ -4,7 +4,6 @@ import 'package:house_of_deliverance/core/custom_fonts.dart';
 import 'package:house_of_deliverance/screens/home_screen.dart';
 import 'package:house_of_deliverance/screens/notes/note_list.dart';
 import 'package:house_of_deliverance/screens/notifications_screen.dart';
-import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 class SongDetailScreen extends StatefulWidget {
   final String lyrics, title, video;
@@ -20,16 +19,16 @@ class SongDetailScreen extends StatefulWidget {
 
 class _LearningScreenState extends State<SongDetailScreen> {
   double fontSizeSelected = 15;
-  YoutubePlayerController _controller = YoutubePlayerController(
-    initialVideoId: 'iLnmTe5Q2Qw',
-  );
+  // YoutubePlayerController _controller = YoutubePlayerController(
+  //   initialVideoId: 'iLnmTe5Q2Qw',
+  // );
 
   bool isStarted = false;
   @override
   void dispose() {
     // TODO: implement dispose
     super.dispose();
-    _controller.dispose();
+    // _controller.dispose();
   }
 
   change() {
@@ -37,9 +36,9 @@ class _LearningScreenState extends State<SongDetailScreen> {
       isStarted = !isStarted;
 
       if (isStarted) {
-        _controller.unMute();
+        // _controller.unMute();
       } else {
-        _controller.mute();
+        // _controller.mute();
       }
     });
   }
@@ -48,20 +47,20 @@ class _LearningScreenState extends State<SongDetailScreen> {
   void initState() {
     super.initState();
 
-    _controller.pause();
+    // _controller.pause();
 
-    var videoId = widget.video.contains("http")
-        ? YoutubePlayer.convertUrlToId(widget.video)
-        : widget.video;
-    _controller.pause();
+    //   var videoId = widget.video.contains("http")
+    //       ? YoutubePlayer.convertUrlToId(widget.video)
+    //       : widget.video;
+    //   _controller.pause();
 
-    _controller = YoutubePlayerController(
-      initialVideoId: videoId ?? 'iLnmTe5Q2Qw',
-    );
-    _controller.pause();
-    _controller.pause();
+    //   _controller = YoutubePlayerController(
+    //     initialVideoId: videoId ?? 'iLnmTe5Q2Qw',
+    //   );
+    //   _controller.pause();
+    //   _controller.pause();
 
-    _controller.pause();
+    //   _controller.pause();
   }
 
   @override
@@ -306,18 +305,18 @@ class _LearningScreenState extends State<SongDetailScreen> {
                     ? Container()
                     : Padding(
                         padding: const EdgeInsets.only(top: 15),
-                        child: ClipRRect(
-                          borderRadius: BorderRadius.circular(20),
-                          child: YoutubePlayer(
-                            controller: _controller,
-                            showVideoProgressIndicator: true,
-                            progressColors: ProgressBarColors(
-                              playedColor: ColorConstant.primaryColor,
-                              handleColor:
-                                  ColorConstant.primaryColor.withOpacity(0.5),
-                            ),
-                          ),
-                        ),
+                        // child: ClipRRect(
+                        //   borderRadius: BorderRadius.circular(20),
+                        //   // child: YoutubePlayer(
+                        //   //   controller: _controller,
+                        //   //   showVideoProgressIndicator: true,
+                        //   //   progressColors: ProgressBarColors(
+                        //   //     playedColor: ColorConstant.primaryColor,
+                        //   //     handleColor:
+                        //   //         ColorConstant.primaryColor.withOpacity(0.5),
+                        //   //   ),
+                        //   // ),
+                        // ),
                       ),
               ],
             ),
